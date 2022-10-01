@@ -41,42 +41,44 @@ is empty, then the program must display "OK" followed by a ’\n’ on the stand
 • In every other case, it must display "KO" followed by a ’\n’ on the standard output.
 • In case of error, you must display "Error" followed by a ’\n’ on the standard error. Errors include for example: some arguments are not integers, some arguments are bigger than an integer, there are duplicates, an instruction doesn’t exist and/or is incorrectly formatted.
 
-Для сборки бонусной части использовать команду 
-make bonus
+Для сборки бонусной части использовать команду
+   <li>make bonus</li>
 
 Запуск бонусной части
-./checker 7 9 6 0 -434 45 -53 3 -51
-pb
-pb
-rb
-pb
-ra
-ra
-ra
-ra
-pb
-pb
-ra
-pb
-ra
-sb
-pa
-sa
-pa
-rra
-pa
-ra
-pa
-ra
-pa
-ra
-pa
-ra
-ra
-^D
+   <li>./checker 7 9 6 0 -434 45 -53 3 -51</li>
+   <li>pb</li>
+   <li>pb</li>
+   <li>rb</li>
+   <li>pb</li>
+   <li>ra</li>
+   <li>ra</li>
+   <li>ra</li>
+   <li>ra</li>
+   <li>pb</li>
+   <li>pb</li>
+   <li>ra</li>
+   <li>pb</li>
+   <li>ra</li>
+   <li>sb</li>
+   <li>pa</li>
+   <li>sa</li>
+   <li>pa</li>
+   <li>rra</li>
+   <li>pa</li>
+   <li>ra</li>
+   <li>pa</li>
+   <li>ra</li>
+   <li>pa</li>
+   <li>ra</li>
+   <li>pa</li>
+   <li>ra</li>
+   <li>ra</li>
+   <li>^D</li>
+
 
 Для быстрого подсчета скорости сортировки на 500 элементов
-ARG=`ruby -e "puts (1..500).to_a.shuffle.join(' ')"`; ./push_swap $ARG > result.txt; ./checker $ARG <result.txt; wc -l <result.txt
+   <li>
+ARG=`ruby -e "puts (1..500).to_a.shuffle.join(' ')"`; ./push_swap $ARG > result.txt; ./checker $ARG <result.txt; wc -l <result.txt</li>
 
 на 500 элементов сортировка происходит за 4000 - 4500 операций
 </h4>
